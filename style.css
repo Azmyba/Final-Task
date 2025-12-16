@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f8;
-  margin: 0;
   padding: 20px;
 }
 
@@ -13,23 +12,38 @@ header {
   border-radius: 10px;
 }
 
-section {
-  background: white;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 10px;
+.container {
+  max-width: 800px;
+  margin: 30px auto;
 }
 
-h2 {
+.accordion {
+  background-color: #ffffff;
   color: #1f6feb;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: 0.3s;
 }
 
-ul {
+.accordion:hover {
+  background-color: #e8f0ff;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+}
+
+.panel ul {
+  padding: 15px 0;
   line-height: 1.8;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #555;
 }
